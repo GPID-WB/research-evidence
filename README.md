@@ -18,9 +18,9 @@ journaled YAML persistence, a loopback API, and a derived browser review surface
 Set up the package with:
 
 ```text
-uv sync --project research_evidence
-uv run --project research_evidence research-evidence --help
-uv run --project research_evidence pytest research_evidence/tests -q
+uv sync
+uv run research-evidence --help
+uv run pytest tests -q
 ```
 
 The configured resources root must be inside the project root. URL resources,

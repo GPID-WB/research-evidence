@@ -10,7 +10,7 @@ from typing import Any
 
 def _load_shared_secure_fs() -> ModuleType:
     """Load the repository-owned secure filesystem implementation by relative path."""
-    repository_root = Path(__file__).resolve().parents[3]
+    repository_root = Path(__file__).resolve().parents[2]
     source_path = repository_root / "scripts" / "secure_fs.py"
     if not source_path.is_file():
         raise RuntimeError(
